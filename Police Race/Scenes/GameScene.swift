@@ -173,7 +173,7 @@ extension GameScene {
     }
     
     func addButtonToLeft() {
-        buttonLeft = SKSpriteNode(imageNamed: "arrow_left")
+        buttonLeft = SKSpriteNode(imageNamed: Image.Control.left.rawValue)
         buttonLeft.size = CGSize(width: 75, height: 100)
         buttonLeft.position = CGPoint(x: size.width / 4 + 10, y: 60)
         
@@ -183,7 +183,7 @@ extension GameScene {
     }
     
     func addButtonToRight() {
-        buttonRight = SKSpriteNode(imageNamed: "arrow_right")
+        buttonRight = SKSpriteNode(imageNamed: Image.Control.right.rawValue)
         buttonRight.size = CGSize(width: 75, height: 100)
         buttonRight.position = CGPoint(x: size.width - size.width / 4 - 10, y: 60)
         
@@ -197,7 +197,7 @@ extension GameScene {
         let imageHeight: CGFloat = 2400
         let aspectRatio = imageWidth / imageHeight
         
-        backgroundNode1 = SKSpriteNode(imageNamed: "game-back")
+        backgroundNode1 = SKSpriteNode(imageNamed: Image.Game.background.rawValue)
         let scaledHeight = UIScreen.main.bounds.width / aspectRatio
         backgroundNode1.size = CGSize(width: UIScreen.main.bounds.width, height: scaledHeight)
         backgroundNode1.position = CGPoint(x: size.width / 2, y: size.height / 2)
@@ -212,7 +212,7 @@ extension GameScene {
         let imageHeight: CGFloat = 2400
         let aspectRatio = imageWidth / imageHeight
         
-        backgroundNode2 = SKSpriteNode(imageNamed: "game-back")
+        backgroundNode2 = SKSpriteNode(imageNamed: Image.Game.background.rawValue)
         let scaledHeight = UIScreen.main.bounds.width / aspectRatio
         backgroundNode2.size = CGSize(width: UIScreen.main.bounds.width, height: scaledHeight)
         backgroundNode2.position = CGPoint(x: size.width / 2, y: size.height / 2 + backgroundNode2.size.height)
@@ -221,7 +221,7 @@ extension GameScene {
     }
     
     func addPlayerCar() {
-        carPlayer = SKSpriteNode(imageNamed: "car-player")
+        carPlayer = SKSpriteNode(imageNamed: Image.Car.player.rawValue)
         carPlayer.size = CGSize(width: 50, height: 110)
         carPlayer.position = CGPoint(x: size.width / 2, y: 150)
         
@@ -231,7 +231,7 @@ extension GameScene {
     }
     
     func addEnemyCar() {
-        let enemyCar = SKSpriteNode(imageNamed: "car-police")
+        let enemyCar = SKSpriteNode(imageNamed: Image.Car.police.rawValue)
         enemyCar.size = CGSize(width: 85, height: 110)
         let carPos = PlayerPosition.allCases.randomElement()
         var posX = 0.0
