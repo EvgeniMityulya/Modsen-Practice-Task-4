@@ -18,6 +18,7 @@
 		848956242C33422600AFB43B /* PlayerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848956232C33422600AFB43B /* PlayerPosition.swift */; };
 		848956262C33C1AF00AFB43B /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848956252C33C1AF00AFB43B /* GameOverViewController.swift */; };
 		848956282C33C3CB00AFB43B /* BitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848956272C33C3CB00AFB43B /* BitMasks.swift */; };
+		A00368BD2C34445900840F23 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00368BC2C34445900840F23 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		848956232C33422600AFB43B /* PlayerPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPosition.swift; sourceTree = "<group>"; };
 		848956252C33C1AF00AFB43B /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		848956272C33C3CB00AFB43B /* BitMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMasks.swift; sourceTree = "<group>"; };
+		A00368BC2C34445900840F23 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				848956232C33422600AFB43B /* PlayerPosition.swift */,
+				A00368BC2C34445900840F23 /* Image.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				848956282C33C3CB00AFB43B /* BitMasks.swift in Sources */,
 				8489560A2C3327ED00AFB43B /* GameViewController.swift in Sources */,
 				848956262C33C1AF00AFB43B /* GameOverViewController.swift in Sources */,
+				A00368BD2C34445900840F23 /* Image.swift in Sources */,
 				848956022C3327ED00AFB43B /* AppDelegate.swift in Sources */,
 				848956242C33422600AFB43B /* PlayerPosition.swift in Sources */,
 				848956222C33312E00AFB43B /* UserDefaultsHighScoreManager.swift in Sources */,
