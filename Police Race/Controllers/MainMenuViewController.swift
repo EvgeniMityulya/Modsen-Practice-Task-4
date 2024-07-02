@@ -10,14 +10,22 @@ import UIKit
 final class MainMenuViewController: UIViewController {
     
     private lazy var logo: UIImageView = {
-        let logo = UIImageView(image: UIImage(named: "menu-logo"))
+        let logo = UIImageView(
+            image: UIImage(
+                named: Image.Menu.logo.rawValue
+            )
+        )
         logo.contentMode = .scaleAspectFit
         logo.translatesAutoresizingMaskIntoConstraints = false
         return logo
     }()
     
     private lazy var background: UIImageView = {
-        let background = UIImageView(image: UIImage(named: "menu-bg"))
+        let background = UIImageView(
+            image: UIImage(
+                named: Image.Menu.background.rawValue
+            )
+        )
         background.contentMode = .scaleAspectFill
         background.translatesAutoresizingMaskIntoConstraints = false
         return background
@@ -26,7 +34,7 @@ final class MainMenuViewController: UIViewController {
     private lazy var playButton: UIButton = {
         let playButton = UIButton()
         
-        playButton.setImage(UIImage(named: "menu-btn"), for: .normal)
+        playButton.setImage(UIImage(named: Image.Menu.button.rawValue), for: .normal)
         playButton.imageView?.contentMode = .scaleAspectFit
         
         playButton.addTarget(self, action: #selector(playClick), for: .touchUpInside)
@@ -38,7 +46,7 @@ final class MainMenuViewController: UIViewController {
     }()
     
     private lazy var textImage: UIImageView = {
-        let imageLabel = UIImageView(image: UIImage(named: "menu-label"))
+        let imageLabel = UIImageView(image: UIImage(named: Image.Menu.label.rawValue))
         
         imageLabel.contentMode = .scaleAspectFit
         
