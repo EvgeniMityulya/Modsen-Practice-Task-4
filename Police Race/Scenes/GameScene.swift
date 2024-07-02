@@ -8,7 +8,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+final class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // MARK: Nodes
     private var backgroundNode1: SKSpriteNode!
@@ -92,7 +92,6 @@ extension GameScene {
         if isPlayerMoving { return }
         for touch in touches {
             let location = touch.location(in: self)
-            isPlayerMoving = true
             if buttonLeft.contains(location) {
                 switch playerPosition {
                 case .left:
@@ -100,18 +99,22 @@ extension GameScene {
                     isPlayerMoving = false
                 case .center:
                     playerPosition = .left
+                    isPlayerMoving = true
                     movePlayerCar(to: CGPoint(x: carPlayer.position.x - carMovementDistance, y: carPlayer.position.y))
                 case .right:
                     playerPosition = .center
+                    isPlayerMoving = true
                     movePlayerCar(to: CGPoint(x: carPlayer.position.x - carMovementDistance, y: carPlayer.position.y))
                 }
             } else if buttonRight.contains(location) {
                 switch playerPosition {
                 case .left:
                     playerPosition = .center
+                    isPlayerMoving = true
                     movePlayerCar(to: CGPoint(x: carPlayer.position.x + carMovementDistance, y: carPlayer.position.y))
                 case .center:
                     playerPosition = .right
+                    isPlayerMoving = true
                     movePlayerCar(to: CGPoint(x: carPlayer.position.x + carMovementDistance, y: carPlayer.position.y))
                 case .right:
                     playerPosition = .right
