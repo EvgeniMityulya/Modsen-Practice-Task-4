@@ -21,7 +21,7 @@ final class GameOverViewController: UIViewController {
     }
     
     private lazy var logo: UIImageView = {
-        let logo = UIImageView(image: UIImage(named: "over-logo"))
+        let logo = UIImageView(image: UIImage(named: Image.Game.over.rawValue))
         
         logo.contentMode = .scaleAspectFit
         
